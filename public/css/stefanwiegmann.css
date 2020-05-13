@@ -13,6 +13,7 @@ body {
   height: 100%;
   position: relative;
   padding: 0px;
+  /* color: #838383; */
   /* background-color: #EC7063; */
 }
 #wrapper {
@@ -32,9 +33,17 @@ body {
  width: 100%;
  height: 40px;
  padding: 5px;
- background-color: #EAEDED;
- border-color: #EAEDED;
+ /* background-color: #EAEDED; */
+ /* border-color: #EAEDED; */
 }
+/* .footer>a, .footer>a:visited{
+    color: #838383;
+    text-decoration: none;
+}
+.footer>a:focus, .footer>a:hover{
+    color: #404040;
+    text-decoration: none;
+} */
 #main {
   	min-height: 100%;
   	position: relative;
@@ -42,6 +51,22 @@ body {
     /* background-color: #5DADE2; */
 }
 
+
+/* navigation */
+a {
+    color: #404040;
+    /* background-color: var(--lightest); */
+    border-color: #d8dadd;
+    text-decoration: none;
+}
+a:focus, a:hover {
+    color: #bfbfbf;
+    text-decoration: none;
+    /* background-color: var(--lightest); */
+}
+.active>a:focus, .active>a:hover, .active>a:visited, .active>a:active, .active>a:link{
+    color: #bfbfbf;
+}
 
 /* #layout {
   	min-height: 100%;
