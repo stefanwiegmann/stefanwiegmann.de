@@ -1,49 +1,63 @@
+:root {
+    /* --darkest-color: #17202A;
+    --darker-color: #1B2631;
+    --dark-color: #424949;
+    --darkest-background: #CCD1D1;
+    --darker-background: #D5DBDB;
+    --dark-background: #E5E7E9; */
+    --darkest-color: #17202a;
+    --darker-color: #273746;
+    --dark-color: #808b96;
+    --darkest-background: #626567;
+    --darker-background: #a6acaf;
+    --dark-background: #d7dbdd;
+}
+
 * {
  box-sizing: border-box;
 }
+
 *:before,
 *:after {
  box-sizing: border-box;
 }
+
 html,
 body {
-  font-family: 'Fjord One', serif;
-  /* padding-top: 5px; */
-  /*padding-bottom: 20px;*/
-  height: 100%;
-  position: relative;
-  padding: 0px;
-  /* color: #838383; */
-  /* background-color: #EC7063; */
+    font-family: 'Fjord One', serif;
+    /* padding-top: 5px; */
+    /*padding-bottom: 20px;*/
+    height: 100%;
+    position: relative;
+    padding: 0px;
+    color: var(--darkest-color);
+    /* background-color: #EC7063; */
 }
+
 #wrapper {
- min-height: 100vh; /* will cover the 100% of viewport */
- overflow: hidden;
- display: block;
- position: relative;
- padding-left: 0px;
- padding-right: 0px;
- padding-top: 0px;
- padding-bottom: 40px; /* height of your footer */
- /* background-color: #F9E79F; */
+    min-height: 100vh; /* will cover the 100% of viewport */
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 40px; /* height of your footer */
+    /* background-color: #F9E79F; */
 }
 .footer {
- position: absolute;
- bottom: 0;
- width: 100%;
- height: 40px;
- padding: 5px;
- /* background-color: #EAEDED; */
- /* border-color: #EAEDED; */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    /* background-color: #EAEDED; */
+    /* border-color: #EAEDED; */
 }
-/* .footer>a, .footer>a:visited{
-    color: #838383;
-    text-decoration: none;
+.jumbotron{
+    background-color: var(--dark-background);
+    /* background-color: #aaa; */
 }
-.footer>a:focus, .footer>a:hover{
-    color: #404040;
-    text-decoration: none;
-} */
 #main {
   	min-height: 100%;
   	position: relative;
@@ -54,19 +68,40 @@ body {
 
 /* navigation */
 a {
-    color: #404040;
+    /* color: #404040; */
+    color: var(--darker-color);
     /* background-color: var(--lightest); */
     border-color: #d8dadd;
     text-decoration: none;
 }
 a:focus, a:hover {
-    color: #bfbfbf;
+    /* color: #bfbfbf; */
+    color: var(--dark-color);
     text-decoration: none;
     /* background-color: var(--lightest); */
 }
 .active>a:focus, .active>a:hover, .active>a:visited, .active>a:active, .active>a:link{
-    color: #bfbfbf;
+    /* color: #bfbfbf; */
+    color: var(--darker-color);
 }
+.navbar-light .navbar-nav .active>.nav-link{
+    color: var(--darkest-color);
+}
+.navbar-light .navbar-nav .nav-link{
+    color: var(--dark-color);
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+    color: var(--darker-color);
+}
+/* li.nav-item.active{
+    color: var(--dark-color);
+}
+li.nav-item{
+    color: var(--darkest-color);
+}
+a.nav-link:focus, a.nav-link:hover{
+    color: var(--darker-color);
+} */
 
 /* #layout {
   	min-height: 100%;

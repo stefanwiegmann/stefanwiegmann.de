@@ -6,14 +6,13 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
-class DefaultController extends AbstractController
+class WhatElseController extends AbstractController
 {
     /**
-    * @Route("/", name="index")
-    * @Route("/", name="home")
+    * @Route("/whatelse", name="whatelse")
     */
-    public function home()
+    public function whatelse()
     {
-      return $this->render('default/home.html.twig');
+      return $this->render('whatelse/whatelse.html.twig');
     }
 }
